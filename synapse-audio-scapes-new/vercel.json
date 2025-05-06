@@ -4,6 +4,16 @@
   "framework": "vite",
   "installCommand": "npm install",
   "nodeVersion": "18.x",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist",
+        "buildCommand": "npm run build"
+      }
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
