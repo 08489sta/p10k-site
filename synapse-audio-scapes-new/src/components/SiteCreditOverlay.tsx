@@ -9,7 +9,7 @@ const SiteCreditOverlay = () => {
           href="https://ainything.net" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-[#D6BCFA] font-bold hover:text-[#C4A1F7] transition-colors"
+          className="text-[#D6BCFA] font-bold hover:text-[#B794F4] transition-colors"
         >
           AInything
         </a>
