@@ -7,12 +7,10 @@
     "node": ">=16.20.2"
   },
   "scripts": {
-    "preinstall": "node scripts/ensure-vite.js",
     "dev": "vite",
-    "build": "node build.mjs",
+    "build": "vite build",
     "vercel-build": "node build.mjs",
-    "preview": "vite preview",
-    "start": "vite preview --host"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
