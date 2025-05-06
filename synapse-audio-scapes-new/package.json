@@ -2,13 +2,13 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=16.20.2"
   },
   "scripts": {
     "dev": "vite",
-    "build": "./node_modules/.bin/vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "vite preview --host"
   },
