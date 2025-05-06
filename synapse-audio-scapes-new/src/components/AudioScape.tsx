@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, useState, useEffect } from "react";
 import SplineScene from "./SplineScene";
-import ChainSynapseOverlay from "./ChainSynapseOverlay";
+import SiteCreditOverlay from "./SiteCreditOverlay";
 import MusicPlatformLinks from "./MusicPlatformLinks";
 import { toast } from "sonner";
 
@@ -167,7 +167,7 @@ const AudioScape: React.FC = () => {
         )}
       </button>
       <SplineScene splineUrl={SPLINE_SCENE_URL} onLoad={handleSplineLoad} />
-      <ChainSynapseOverlay />
+      <SiteCreditOverlay />
       <MusicPlatformLinks />
     </div>
   );
