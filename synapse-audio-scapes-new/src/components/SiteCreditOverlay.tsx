@@ -6,7 +6,7 @@ const SiteCreditOverlay = () => {
       <p className="text-white text-sm font-medium">
         site by{" "}
         <a 
-          href="https://ainything.net" 
+          href="https://www.ainything.net/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-[#D6BCFA] font-bold hover:text-[#B794F4] transition-colors"
