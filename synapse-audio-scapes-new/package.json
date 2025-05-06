@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "./node_modules/.bin/vite build",
-    "build:dev": "./node_modules/.bin/vite build --mode development",
+    "dev": "node --experimental-modules node_modules/vite/bin/vite.js",
+    "build": "node --experimental-modules node_modules/vite/bin/vite.js build",
+    "build:dev": "node --experimental-modules node_modules/vite/bin/vite.js build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "node --experimental-modules node_modules/vite/bin/vite.js preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
