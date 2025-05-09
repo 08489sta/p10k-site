@@ -1,10 +1,10 @@
-const { defineConfig } = require("vite");
-const react = require("@vitejs/plugin-react-swc");
-const path = require("path");
-const { componentTagger } = require("lovable-tagger");
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
+import { componentTagger } from 'lovable-tagger';
 
 // https://vitejs.dev/config/
-module.exports = defineConfig({
+export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
