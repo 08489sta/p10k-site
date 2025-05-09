@@ -1,18 +1,14 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const { defineConfig } = require('vite');
+const react = require('@vitejs/plugin-react-swc');
+const path = require('path');
 
 // https://vitejs.dev/config/
-export default defineConfig({
+module.exports = defineConfig({
   plugins: [react()],
   base: '/',
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
   build: {
