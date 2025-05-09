@@ -8,9 +8,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "./node_modules/.bin/vite build",
-    "vercel-build": "npm ci && ./node_modules/.bin/vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview --host"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
