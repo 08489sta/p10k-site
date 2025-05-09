@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "vercel-build": "node vercel-build.js",
+    "build": "npx vite build",
+    "vercel-build": "npm install && npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
